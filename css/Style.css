@@ -34,7 +34,7 @@ img {
   background-color: var(--White);
   display: flex;
   flex-direction: row;
-  width: 700px;
+  width: 500px;
   border-radius: 10px;
 }
 
