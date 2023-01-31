@@ -1,0 +1,126 @@
+:root {
+  /* Primary */
+  --Dark_cyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+  /* Neutral */
+  --Very_dark_blue: hsl(212, 21%, 14%);
+  --Dark_grayish_blue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.parent {
+  position: relative;
+  background-color: var(--Cream);
+  height: 100vh;
+}
+
+img {
+  width: 50%;
+  margin-right: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.cart {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--White);
+  display: flex;
+  flex-direction: row;
+  width: 700px;
+  border-radius: 10px;
+}
+
+.cart .Text {
+  padding: 28px;
+  padding-right: 51px;
+
+}
+
+.cart .Text h4 {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--Dark_grayish_blue);
+  font-weight: 400;
+  line-height: 3.4;
+  letter-spacing: 7px;
+  font-size: .9rem;
+  text-indent: -3px;
+}
+
+.cart .Text h1 {
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+}
+
+.cart .Text p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  color: var(--Dark_grayish_blue);
+  line-height: 2;
+  margin: 30px 0;
+}
+
+.cart .price h1 {
+  position: relative;
+  display: inline-block;
+  font-family: 'Fraunces', serif;
+  font-size: 35px;
+  color: var(--Dark_cyan);
+  margin-bottom: 25px;
+}
+
+.cart .price h1::before {
+  content: "$169.99";
+  color: var(--Dark_grayish_blue);
+  /* Position */
+  position: absolute;
+  left: 130%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  /* Font */
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.cart .price h1::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: var(--Dark_grayish_blue);
+  width: 50px;
+  /* Position */
+  position: absolute;
+  left: 113%;
+  top: 50%;
+}
+
+button {
+  /* Button Style */
+  border: none;
+  width: 102%;
+  height: 55px;
+  background-color: var(--Dark_cyan);
+  color: white;
+  /* Font Style */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  /* Other */
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: .3s;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #184131;
+}
